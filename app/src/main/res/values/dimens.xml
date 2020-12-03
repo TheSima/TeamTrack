@@ -1,4 +1,4 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="movie_details_main_start_margin">16dp</dimen>
+    <dimen name="movie_details_main_margin">16dp</dimen>
 </resources>
