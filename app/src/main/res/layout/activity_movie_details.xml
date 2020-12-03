@@ -111,15 +111,13 @@
             app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintTop_toBottomOf="@id/movie_title" />
 
-
         <ImageView
             android:id="@+id/review_star1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_star_active"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tags"
-            app:layout_constraintEnd_toStartOf="@+id/review_star2"
+            android:src="@drawable/ic_star"
+            app:layout_constraintTop_toTopOf="@+id/number_of_reviews"
+            app:layout_constraintBottom_toBottomOf="@id/number_of_reviews"
             app:layout_constraintStart_toEndOf="@id/guideline_start" />
 
         <ImageView
@@ -127,10 +125,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
-            android:src="@drawable/ic_star_active"
-            app:layout_constraintTop_toTopOf="@+id/review_star1"
-            app:layout_constraintBottom_toBottomOf="@id/review_star1"
-            app:layout_constraintEnd_toStartOf="@+id/review_star3"
+            android:src="@drawable/ic_star"
+            app:layout_constraintTop_toTopOf="@+id/number_of_reviews"
+            app:layout_constraintBottom_toBottomOf="@id/number_of_reviews"
             app:layout_constraintStart_toEndOf="@+id/review_star1" />
 
         <ImageView
@@ -138,10 +135,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
-            android:src="@drawable/ic_star_active"
-            app:layout_constraintTop_toTopOf="@+id/review_star1"
-            app:layout_constraintBottom_toBottomOf="@id/review_star1"
-            app:layout_constraintEnd_toStartOf="@+id/review_star4"
+            android:src="@drawable/ic_star"
+            app:layout_constraintTop_toTopOf="@+id/number_of_reviews"
+            app:layout_constraintBottom_toBottomOf="@id/number_of_reviews"
             app:layout_constraintStart_toEndOf="@+id/review_star2" />
 
         <ImageView
@@ -149,10 +145,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
-            android:src="@drawable/ic_star_active"
-            app:layout_constraintTop_toTopOf="@+id/review_star1"
-            app:layout_constraintBottom_toBottomOf="@id/review_star1"
-            app:layout_constraintEnd_toStartOf="@+id/review_star5"
+            android:src="@drawable/ic_star"
+            app:layout_constraintTop_toTopOf="@+id/number_of_reviews"
+            app:layout_constraintBottom_toBottomOf="@id/number_of_reviews"
             app:layout_constraintStart_toEndOf="@+id/review_star3" />
 
         <ImageView
@@ -160,27 +155,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
-            android:src="@drawable/ic_star_active"
-            app:layout_constraintTop_toTopOf="@+id/review_star1"
-            app:layout_constraintBottom_toBottomOf="@id/review_star1"
-            app:layout_constraintEnd_toStartOf="@+id/number_of_reviews"
-            app:layout_constraintStart_toEndOf="@+id/review_star4"
-            app:tint="@color/inactive_star_color" />
+            android:src="@drawable/ic_star"
+            app:tint="@color/inactive_star_color"
+            app:layout_constraintTop_toTopOf="@+id/number_of_reviews"
+            app:layout_constraintBottom_toBottomOf="@id/number_of_reviews"
+            app:layout_constraintStart_toEndOf="@+id/review_star4"/>
 
         <TextView
             android:id="@+id/number_of_reviews"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="@string/_125_reviews"
             android:textAllCaps="true"
             android:textColor="@color/third_main_color"
-            app:layout_constraintTop_toTopOf="@+id/review_star1"
-            app:layout_constraintBottom_toBottomOf="@id/review_star1"
+            app:layout_constraintTop_toBottomOf="@+id/tags"
             app:layout_constraintStart_toEndOf="@+id/review_star5"
             app:layout_constraintEnd_toStartOf="@id/guideline_end"/>
-
 
         <TextView
             android:id="@+id/storyline"
