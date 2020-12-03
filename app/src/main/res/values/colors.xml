@@ -14,4 +14,5 @@
     <color name="third_main_color">#6D6D80</color>
     <color name="opacity_white">#BFFFFFFF</color>
     <color name="casts_color">#D8D8D8</color>
+    <color name="inactive_star_color">#6D6D80</color>
 </resources>
