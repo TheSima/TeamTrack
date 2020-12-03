@@ -213,7 +213,7 @@
             android:text="@string/avengers_end_game_storyline_text"
             android:textColor="@color/opacity_white"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintStart_toEndOf="@id/guideline_start"
             app:layout_constraintTop_toBottomOf="@id/storyline"
             app:lineHeight="20sp" />
@@ -235,7 +235,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintStart_toStartOf="@id/cast"
             app:layout_constraintTop_toBottomOf="@id/cast">
 
