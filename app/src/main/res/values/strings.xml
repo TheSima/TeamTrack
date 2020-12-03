@@ -11,7 +11,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="movie_background">Movie background</string>
     <string name="back_button_text">Back</string>
-    <string name="_13">13+</string>
+    <string name="age_limitation">13+</string>
     <string name="movie_title_avengers_end_game">Avengers:<br/> End Game</string>
     <string name="movie_tags_action_adventure_fantasy">Action, Adventure, Fantasy</string>
     <string name="storyline">Storyline</string>
