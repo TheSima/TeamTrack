@@ -12,7 +12,7 @@
         <activity
             android:name=".MovieDetailsActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TeamTrack.NoActionBar">
+            android:theme="@style/Theme.TeamTrack">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
