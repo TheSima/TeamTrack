@@ -30,7 +30,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/movie_background_billboard"
             android:layout_width="match_parent"
             android:layout_height="298dp"
             android:adjustViewBounds="true"
