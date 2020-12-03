@@ -31,7 +31,7 @@
 
         <ImageView
             android:id="@+id/movie_background_billboard"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="298dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/movie_background"
@@ -39,40 +39,31 @@
             android:paddingEnd="0dp"
             android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/orig" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/top_menu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            app:layout_constraintEnd_toEndOf="parent"
+        <ImageView
+            android:id="@+id/back_button_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
             app:layout_constraintStart_toEndOf="@id/guideline_start"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@id/back_button_text"
+            app:layout_constraintBottom_toBottomOf="@id/back_button_text"
+            android:contentDescription="@string/back_button_text"
+            app:srcCompat="@drawable/ic_path" />
 
-            <LinearLayout
-                android:id="@+id/top_menu_back_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:contentDescription="@string/back_button_text"
-                    app:srcCompat="@drawable/ic_path" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="@string/back_button_text"
-                    android:textColor="@color/top_menu_button_back" />
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/back_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/back_button_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/back_button_text"
+            android:textColor="@color/back_button_text_color" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_top"
@@ -97,7 +88,7 @@
 
         <TextView
             android:id="@+id/movie_title"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="38dp"
             android:text="@string/movie_title_avengers_end_game"
@@ -105,17 +96,19 @@
             android:textSize="44sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintTop_toBottomOf="@+id/guideline_top"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tags"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/movie_tags_action_adventure_fantasy"
+            android:text="@string/movie_tags"
             android:textColor="@color/second_main_color"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintTop_toBottomOf="@id/movie_title" />
 
 
@@ -127,7 +120,6 @@
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@id/tags"
             app:layout_constraintEnd_toStartOf="@+id/review_star2"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@id/guideline_start" />
 
         <ImageView
@@ -139,7 +131,6 @@
             app:layout_constraintTop_toTopOf="@+id/review_star1"
             app:layout_constraintBottom_toBottomOf="@id/review_star1"
             app:layout_constraintEnd_toStartOf="@+id/review_star3"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/review_star1" />
 
         <ImageView
@@ -151,7 +142,6 @@
             app:layout_constraintTop_toTopOf="@+id/review_star1"
             app:layout_constraintBottom_toBottomOf="@id/review_star1"
             app:layout_constraintEnd_toStartOf="@+id/review_star4"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/review_star2" />
 
         <ImageView
@@ -163,7 +153,6 @@
             app:layout_constraintTop_toTopOf="@+id/review_star1"
             app:layout_constraintBottom_toBottomOf="@id/review_star1"
             app:layout_constraintEnd_toStartOf="@+id/review_star5"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/review_star3" />
 
         <ImageView
@@ -175,7 +164,6 @@
             app:layout_constraintTop_toTopOf="@+id/review_star1"
             app:layout_constraintBottom_toBottomOf="@id/review_star1"
             app:layout_constraintEnd_toStartOf="@+id/number_of_reviews"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/review_star4"
             app:tint="@color/inactive_star_color" />
 
@@ -190,7 +178,6 @@
             android:textColor="@color/third_main_color"
             app:layout_constraintTop_toTopOf="@+id/review_star1"
             app:layout_constraintBottom_toBottomOf="@id/review_star1"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/review_star5" />
 
 

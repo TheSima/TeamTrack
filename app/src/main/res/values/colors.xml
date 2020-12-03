@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="background">#191926</color>
-    <color name="top_menu_button_back">#6D6D80</color>
+    <color name="back_button_text_color">#6D6D80</color>
     <color name="second_main_color">#FF3466</color>
     <color name="third_main_color">#6D6D80</color>
     <color name="opacity_white">#BFFFFFFF</color>
