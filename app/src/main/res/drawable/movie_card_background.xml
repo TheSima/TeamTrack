@@ -19,9 +19,9 @@
         android:top="1dp"/>
     <item android:bottom="48dp">
         <shape>
-            <gradient android:centerColor=""
-                android:endColor="#191926">
-
+            <gradient android:centerColor="#00191926"
+                android:endColor="#191926"
+                android:angle="270">
             </gradient>
         </shape>
     </item>
