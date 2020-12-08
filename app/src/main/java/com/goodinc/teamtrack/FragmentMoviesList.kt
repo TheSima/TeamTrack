@@ -8,6 +8,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 class FragmentMoviesList : Fragment() {
+    companion object{
+        fun newInstance() : FragmentMoviesList = FragmentMoviesList()
+    }
+
     private var cardClickListener: ClickMovieCardListener? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):

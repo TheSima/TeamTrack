@@ -6,7 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class FragmentMoviesDetails : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):
-            View? = inflater.inflate(R.layout.fragment_movies_details, container, false)
+class FragmentMoviesDetails : Fragment(R.layout.fragment_movies_details) {
+    companion object {
+        fun newInstance() : FragmentMoviesDetails = FragmentMoviesDetails()
+    }
 }

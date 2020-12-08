@@ -11,14 +11,14 @@ class MoviesActivity : AppCompatActivity(), ClickMovieCardListener {
         setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .add(R.id.main_container, FragmentMoviesList())
+                    .add(R.id.main_container, FragmentMoviesList.newInstance())
                     .commit()
         }
     }
 
     override fun onClickCard() {
         supportFragmentManager.beginTransaction()
-                .add(R.id.main_container, FragmentMoviesDetails())
+                .add(R.id.main_container, FragmentMoviesDetails.newInstance())
                 .addToBackStack(null)
                 .commit()
     }
