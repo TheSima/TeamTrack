@@ -85,7 +85,7 @@
 
             <TextView
                 android:id="@+id/movie_card_age_limitation"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/age_limitation_background"
@@ -95,6 +95,8 @@
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/guideline_card_start"
+                app:layout_constraintEnd_toStartOf="@id/guideline_card_end"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
