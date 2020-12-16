@@ -13,4 +13,9 @@
     <string name="chris_evans">Chris Evans</string>
     <string name="mark_ruffalo">Mark Ruffalo</string>
     <string name="chris_hemsworth">Chris Hemsworth</string>
+    <string name="location_movies_list_icon">Location movies list icon</string>
+    <string name="location_movies_list_text">Movies list</string>
+    <string name="like_icon">Like icon</string>
+    <string name="movie_card_tags">Action, Adventure, Drama</string>
+    <string name="movie_card_minutes">137 min</string>
 </resources>
